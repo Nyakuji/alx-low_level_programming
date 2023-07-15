@@ -1,2 +1,0 @@
-First C programming project
-
