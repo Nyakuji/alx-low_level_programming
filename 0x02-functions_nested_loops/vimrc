@@ -1,0 +1,6 @@
+set autoindent
+set cindent
+syntax enable
+set number
+set colorcolumn
+
