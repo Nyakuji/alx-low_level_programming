@@ -1,4 +1,4 @@
-include "main.h"
+#include "main"
 
 /**
  * print_diagonal - prints diagonal line n times.
