@@ -1,25 +1,17 @@
 #include "main.h"
 
 /**
-*print_line - checks code for my function
-*@n: shows integer parameter for my function
-*
-*Return: Always 0
-*/
+ * print_line - prints straight line n times.
+ * @n: times straight line is printed.
+ * Return: no return.
+ */
 void print_line(int n)
 {
-	int a = 0;
+	int i;
 
-	if (n > 0)
+	for (i = 0; i < n; i++)
 	{
-		while (a <= n)
-		{
-			_putchar('_');
-			a++
-		}
-		_putchar('\n');
+		_putchar(95);
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
 }
-
