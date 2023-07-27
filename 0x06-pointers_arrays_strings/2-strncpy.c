@@ -19,8 +19,12 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-	/*Add the terminating null byte*/
-	*ptr = '\0';
-
+	/* Fill the remaining space in destination with null bytes*/
+	while (n > 0)
+	{
+		*ptr = '\0';
+		ptr++;
+		n--;
+	}
 	return (dest);
 }
