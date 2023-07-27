@@ -11,12 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *ptr = dest;
 
-	/*Move the pointer to the end of the destination string*/
-	while (*ptr != '\0')
-	{
-		ptr++;
-	}
-	/*Append at most n characters from the source to the destination*/
+	/*Copy at most n characters from source to destination*/
 	while (*src != '\0' && n > 0)
 	{
 		*ptr = *src;
@@ -24,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-	/*add the terminating null byte*/
+	/*Add the terminating null byte*/
 	*ptr = '\0';
 
 	return (dest);
