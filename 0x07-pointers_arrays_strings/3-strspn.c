@@ -8,28 +8,21 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
+	unsigned int i, j, bool;
 
-	/*Loop through the string until we find a character not present in accept*/
-	while (*s != '\0')
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		char *acccept-ptr = accept;
-		/*Check if the current character is present in the accept string */
-		while (*accept-ptr != '\0')
+		bool = 1;
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if (*s == *accept_ptr)
+			if (*(s + i) == *(accept + j))
 			{
-				count++;
+				bool = 0;
 				break;
 			}
-			accept-ptr++;
 		}
-		/*If the character is not found in accept, break the outer loop */
-		if (*accept-ptr == '\0')
-		{
+		if (bool == 1)
 			break;
-		}
-		s++; /*Move to the next character in the string */
 	}
-	return (count);
+	return (i);
 }
