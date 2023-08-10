@@ -8,6 +8,7 @@
 * @s2: second string
 * @n: amount of memory bytes
 * Return: pointer to newly allocated space in memory
+* if malloc fails, status value is equal to 98
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
