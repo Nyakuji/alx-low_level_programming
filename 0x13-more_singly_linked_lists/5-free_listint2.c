@@ -11,13 +11,11 @@ void free_listint2(listint_t **head)
 	listint_t *current = *head;
 	listint_t *temp;
 
-	if (head != NULL)
+	while (current != NULL)
 	{
-		while ((temp = current) != NULL)
-		{
-			current = current->next;
-			free(temp);
-		}
-		*head = NULL; /* set the head to NULL to indicate an empty list */
+		temp = current;
+		current = current->next;
+		free(temp);
 	}
+	*head = NULL; /* set the head to NULL to indicate an empty list */
 }
