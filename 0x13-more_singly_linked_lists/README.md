@@ -1,6 +1,7 @@
-[**0x13-more_singly_linked_lists**]
+**0x13-more_singly_linked_lists**
 
-[! TECHNOLOGY AND REQUIREMENTS]
+> [!NOTE] 
+> TECHNOLOGY AND REQUIREMENTS]
 
 + Allowed editors: vi, vim, emacs.
 - All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89.
