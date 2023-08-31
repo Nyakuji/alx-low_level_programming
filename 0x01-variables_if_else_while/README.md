@@ -1,5 +1,5 @@
 # **Variables, if, else and while.**
-Project done during **Full Stack Software Engineering **studies at ***Alx and Holberton School**. It aims to learn about arithmetic operators, relational operators, boolean operators, comments, declaring variables and loops in C language.
+Project done during **Full Stack Software Engineering** studies at ***Alx and Holberton School**. It aims to learn about arithmetic operators, relational operators, boolean operators, comments, declaring variables and loops in C language.
 
 ## Technologies and Requirements
 + Allowed editors: vi, vim, emacs
@@ -8,7 +8,7 @@ Project done during **Full Stack Software Engineering **studies at ***Alx and Ho
 + There should be no errors and no warnings during compilation
 * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 
-'Files'
+**Files**
 All of the following files are programs written in C:
 
 |FILENAME  | DESCRIPTION|
