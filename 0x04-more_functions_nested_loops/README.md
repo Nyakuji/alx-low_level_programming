@@ -11,6 +11,7 @@ Project done during **Full Stack Software Engineering** studies at ***Alx-Africa
 + You are not allowed to use the standard library. Any use of functions like printf, puts, etc… is forbidden
 + You are allowed to use _putchar
 * The prototypes of all your functions and the prototype of the function _putchar should be included in your header file called main.h
+
 **Files**
 All of the following files are programs written in C:
 
