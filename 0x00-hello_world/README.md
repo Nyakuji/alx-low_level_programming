@@ -10,7 +10,8 @@ Project done during **Full Stack Software Engineering** studies **at Alx and Hol
 Files.
 + All of the following files are scripts and programs written in C:
 
- |-FILENAME-----|--DESCRIPTION-|
+ |FILENAME      DESCRIPTION     |           | 
+ |-----------|-------------------|
  |0-preprocessor|	Runs a C file through the preprocessor and saves the result into another file
  |1-compiler|	Compiles a C file but does not link
  |2-assembler|	Generates the assembly code of a C code and saves it in an output file
