@@ -12,7 +12,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	int text_len = 0, fd;
 	ssize_t bytesWritten;
 
-	if (filename == NULL || text_content == NULL)
+	if (filename == NULL)
 		return (-1);
 
 	/* open the file in append mode */
@@ -22,23 +22,24 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (fd == -1)
 		return (-1);
 
-	/* calculate the length of the text_content */
-	while (text_content[text_len] != '\0')
+	if (text_content != NULL)
 	{
-		text_len++;
+		/* calculate the length of the text_content */
+		while (text_content[text_len] != '\0')
+		{
+			text_len++;
+		}
+
+		/* write the text_content to the file */
+		bytesWritten = write(fd, text_content, text_len);
+
+		/* check if an error occurred  while writing */
+		if (bytesWritten == -1)
+		{
+			return (-1);
+		}
 	}
 
-	/* write the text_content to the file */
-	bytesWritten = write(fd, text_content, text_len);
-
-	/* check if an error occurred  while writing */
-	if (bytesWritten == -1)
-	{
-		close(fd);
-		return (-1);
-	}
 	close(fd); /* close the file */
-
 	return (1);
 }
-
