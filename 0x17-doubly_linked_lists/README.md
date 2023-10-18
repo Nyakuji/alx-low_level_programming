@@ -1,7 +1,7 @@
 # **0x17-doubly_linked_lists**
 Project done during **Full Stack Software Engineering program** at ***Alx-Africa**. It aims to learn about doubly linked lists in C language.
 
-## ** Technologies and Requirements**
+## **Technologies and Requirements**
 
 - Allowed editors: vi, vim, emacs
 - All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
@@ -11,8 +11,8 @@ Project done during **Full Stack Software Engineering program** at ***Alx-Africa
   ### **Files**
    - All of the following files are scripts and programs written in C:
 
-    | Filename|	Description|
-  |-----------|------------|
+    | Filename|  Description |
+  |-----------|--------------|
 |0-print_dlistint.c|	Prints all the elements of a dlistint_t list
 |1-dlistint_len.c|	Returns the number of elements in a linked dlistint_t list
 |2-add_dnodeint.c|	Adds a new node at the beginning of a dlistint_t list
